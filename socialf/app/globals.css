@@ -39,4 +39,7 @@ body{
         border-left: solid var(--ui) 1px;
         padding: 2svw;
     }
+    #rightDIV{
+        padding: 2svw;
+    }
 }
