@@ -1,0 +1,42 @@
+:root{
+    --ui: rgb(207, 207, 207);
+    --fontColor1 : black;
+    --fontColor2: rgb(103, 103, 103);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display:flex;
+    width: 100svw;
+    min-height: 100svh;
+    overflow-x: hidden;
+
+    #navDIV{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2svw;
+
+        a{
+            color: var(--fontColor2);
+            text-decoration: none;
+            font-size: 2svw;
+            margin: 1svw;
+            width: 10svw;
+
+            &:hover{
+                color: var(--fontColor1)
+            }
+        }
+    }
+    #contentDIV{
+        width: 45%;
+        border-right: solid var(--ui) 1px;
+        border-left: solid var(--ui) 1px;
+        padding: 2svw;
+    }
+}
